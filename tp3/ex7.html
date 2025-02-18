@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice7Tp3</title>
+</head>
+<body>
+    <h1>Exercice 7 : Valeur approchée de la √ d'un nombre réel positif</h1>
+    <script>
+             function Raca1(A) {
+            var x = A / 2;
+            var e = 1e-5;
+            while (Math.abs(x * x - A) > e) {
+                x = 0.5 * (x + A / x);  
+            }
+
+            return x; 
+        }
+var x=parseFloat(prompt("Pour un nombre A entre 1 et 100:"));
+var l=Raca1(x);
+alert("Valeur approchée de la racine carrée ="+l);
+
+
+
+    </script>
+</body>
+</html>
