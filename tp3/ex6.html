@@ -26,12 +26,24 @@ u1=s;
 return s;
 }
 
-function Fibo2(n){
-    
+function Fibo2(val) {
+    var u0 = 0;
+    var u1 = 1;
+    var n = 1; 
+    while (u1 <= val) {
+        var s = u0 + u1;
+        u0 = u1;
+        u1 = s;
+        n++;
+    }
+    return "Le premier terme de la suite de Fibonacci supérieur à " + val +" est :"+u1+ " et le rang est  : " + n;
 }
 var a=parseFloat(prompt("Un entier positif :"));
 var x=Fibo1(a);
-console.log(x);
+console.log("Le "+a+"-ième terme de la suite de Fibonacci est :"+x);
+var b = parseInt(prompt("Entrez un nombre pour trouver le premier terme de la suite de Fibonacci supérieur à ce nombre :"));
+var y = Fibo2(b);
+console.log(y);
 
     </script>
 </body>
