@@ -1,0 +1,192 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+    
+    background-color: #f4f4f4;
+}
+header{
+background-color: pink;
+width: 100%;
+color: white;
+position: fixed;
+z-index: 99;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 160px;
+}
+header p{
+   font-weight: 7OO;
+   font-size: 1.8em; 
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 5OO;
+    font-size: 1.1em; 
+    padding-left: 30px; 
+    color: white;
+}
+header nav a:hover{
+color: gray;
+}
+header p:hover{
+    color: gray;
+    }
+
+.hero {
+    background: url('monsiteback.png') no-repeat center center/cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content h3  {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+   
+}
+.content h4  {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.projt{
+   color: black; 
+   background-color: rgb(243, 133, 151);
+   text-decoration: none;
+   font-size: 1.1em;
+   font-weight: 500;
+   display: inline-block;
+   padding: 10px 20px;
+   letter-spacing: 1px;
+   border-radius: 5px;
+transition: 0.7s ease;
+}
+.projt:hover{
+    background-color:rgb(241, 93, 118) ;
+    transform: scale(1.1);
+}
+#skills {
+    background-color: rgb(250, 233, 247);
+    padding: 130px 20px;
+    text-align: center;
+    
+}
+#skills h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 100px;
+}
+#skiliste{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#skiliste ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0d0000;
+}
+#projects {
+    background: url('monsiteback.png') no-repeat center center/cover;
+    padding: 100px 200px;
+}
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    
+}
+.ps{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.project {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+#contacts{
+    background-color: rgb(250, 233, 247);
+    padding: 130px 20px;
+    
+align-items: center;
+    text-align: center; 
+}
+#contacts h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px; 
+}
+.email2{
+    background-color: white;
+    width: 30%;
+    padding: 50px;
+    border-radius: 8px;
+    margin-left: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+}
+.email2:hover {
+    transform: translateY(-10px);
+}
+.ema{
+    color: pink;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#contacts h3{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+#contacts a{
+   text-decoration: none;
+   color: rgb(246, 75, 103);
+   font-weight: 700;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+@media(max-width:1023px){
+   header{padding: 12px 10px;} 
+   .email2{margin-left: 80px;
+width: 60%;
+}
+}
