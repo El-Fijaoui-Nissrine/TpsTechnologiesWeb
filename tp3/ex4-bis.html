@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice4-bisTp3</title>
+</head>
+<body>
+    <h1>Exercice 4-bis : Affichage de motifs - pyramides</h1>
+    <script>
+    function triangle2(n){
+        console.log("resultat avec for")
+        var x=n;
+        for(let i=1;i<n;i++){console.log(" ".repeat(x)+"*".repeat(i*2-1)+" ".repeat(x));
+    x--;}
+        
+    }
+    function triangle1(n){
+    console.log("resultat avec while")
+    var l=n;
+    let i=1;
+    while(i<n){
+        console.log(" ".repeat(l)+"*".repeat(i*2-1)+" ".repeat(l));
+       
+        i++;
+        l--;
+    }
+}
+    var a=parseInt(prompt("Un motif de taille="));
+
+triangle2(a);
+triangle1(a);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice5Tp3</title>
+</head>
+<body>
+    <h1>Exercice 5 : Tester si un nombre est premier</h1>
+    <script>
+function Premier(n){
+if(n<=1){
+    return n+" n'est pas un nombre premier"
+
+}
+for(let i=2;i<=parseInt(n**0.5)+1;i++){
+    if(n%i==0){
+         return n+" n'est pas un nombre premier, il est divisible par "+i;
+
+    }
+}
+return n+"est un nombre premier";
+
+}
+var a=parseFloat(prompt("Un entier positif :"));
+var x=Premier(a);
+alert(x);
+
+    </script>
+</body>
+</html>

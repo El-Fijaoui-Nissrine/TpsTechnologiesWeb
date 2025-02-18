@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice3Tp3</title>
+</head>
+<body>
+    <h1>exercice3:Classer 3 nombres</h1>
+<script>
+function troisNombres(a,b,c){
+var mn=Math.min(a,b,c);
+var mx=Math.max(a,b,c);
+if(a!=mn && a!=mx){
+    return mn+" "+a+" "+mx;   
+}
+if(b!=mn && b!=mx){
+    return mn+" "+b+" "+mx;   
+}
+return mn+" "+c+" "+mx;
+}
+
+var a=parseInt(prompt("1er nombre :"));
+var b=parseInt(prompt("2ème nombre :"));
+var c=parseInt(prompt("3ème nombre :"));
+alert("les nombres dans l'ordre croissant :"+troisNombres(a,b,c))
+
+</script>
+</body>
+</html>

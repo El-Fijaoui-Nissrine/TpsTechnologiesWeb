@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice4Tp3</title>
+</head>
+<body>
+   <h1>Exercice 4 : Affichage de motifs - escaliers</h1> 
+   <script>
+function triangle2(n){
+    console.log("resultat avec for")
+    for(let i=1;i<n;i++)
+    console.log("*".repeat(i));
+}
+function triangle1(n){
+    console.log("resultat avec while")
+    let i=1;
+    while(i<n){
+      
+        console.log("*".repeat(i));
+        i++;
+    }
+}
+var a=parseInt(prompt("Un motif de taille="));
+triangle1(a);
+triangle2(a);
+   </script>
+</body>
+</html>

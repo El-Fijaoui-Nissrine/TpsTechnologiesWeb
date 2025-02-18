@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice2Tp3</title>
+</head>
+<body>
+    <h1>Exercice 2 : Conversion de durées</h1>
+    <script>
+        function hjms(s){
+            var j =parseInt (s / (24 * 3600));
+        s = s % (24 * 3600);
+
+        var h =parseInt (s / 3600);
+        s = s % 3600;
+
+        var m =parseInt (s / 60);
+
+        var scr = parseInt(s % 60);
+        return "cette durée équivaut à "+ j +" jours" +h+" heures "+m+" minutes " +scr+" secondes"
+          
+        }
+var sc=parseInt(prompt("Une durée en secondes :"));
+var rj=hjms(sc);
+alert(rj);
+
+    </script>
+</body>
+</html>

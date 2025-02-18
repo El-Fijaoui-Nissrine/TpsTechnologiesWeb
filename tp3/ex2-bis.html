@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice2Tp3</title>
+</head>
+<body>
+    <h1>Exercice 2-bis : Améliorer le programme de conversion de durées</h1>
+    <script>
+        function hjms(s){
+            var j =parseInt (s / (24 * 3600));
+        s = s % (24 * 3600);
+
+        var h =parseInt (s / 3600);
+        s = s % 3600;
+
+        var m =parseInt (s / 60);
+
+        var scr = parseInt(s % 60);
+        var resu=[]
+if(j >0){
+    if(j==1){
+        resu.push( 1 +" jour" ) 
+    }else{ resu.push( j +" jours")}
+   }
+
+    if(h >0){
+    if(h==1){
+        resu.push(1 +" heure " ) 
+    }else{ resu.push(h+" heures ")}
+   }
+
+    if(m >0){
+    if(m==1){
+        resu.push(1+" minute " ) 
+    }else{resu.push(m+" minutes " )}
+    }
+    if(scr >0){
+    if(scr==1){
+        resu.push(1+" seconde " ) 
+    }else{resu.push(scr+" secondes" )}
+    }
+
+
+        return "cette durée équivaut à  "+resu.join(" ");
+          
+        }
+var sc=parseInt(prompt("Une durée en secondes :"));
+var rj=hjms(sc);
+alert(rj);
+
+    </script>
+</body>
+</html>
