@@ -8,4 +8,4 @@ This project is a simplified clone of the Google search page. It demonstrates th
  - SVG Icons: Used for search, microphone, grid, and pencil icons.
 ## Preview :
 Here is a preview of the Google search page clone:
-![Google Search Page Clone]()
+![Google Search Page Clone](./imgGoogle.png)
