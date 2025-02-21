@@ -33,7 +33,7 @@ The user is prompted to enter a temperature in Fahrenheit. parseFloat() is used 
 **Output Display:**
 The result is displayed in an alert box, rounded to one decimal place using toFixed(1).
 ## Example Output:
-``` bash
+``` text
 Input: 60.0  
 Output: cette température équivaut à 15.6 degrés Celsius  
 ```
