@@ -1,22 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tp4ex4</title>
+    <title>Calculatrice </title>
     <style>
-      
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fbf0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .calculator {
+            background-color: #d5d4d4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #f4efef1a;
+        }
+        
+        #clv {
+            width: 100%;
+            height: 50px;
+            background-color: #a6a3a3de;
+            color: #fff;
+            border: none;
+            text-align: right;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 95%;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+        
+        button {
+            background-color: #8f8d8d;
+            color: #fff;
+            border: none;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #575757;
+        }
+        
+        button:active {
+            background-color: #666;
+        }
     </style>
 </head>
 <body>
+    <div class="calculator">
+        <input type="text" id="clv" readonly>
+        <div class="buttons">
+            <button onclick="appendToclv('(')">(</button>
+            <button onclick="appendToclv(')')">)</button>
+            <button onclick="appendToclv('%')">%</button>
+            <button onclick="clearclv()">CE</button>
+            <button onclick="invert()">Inv</button>
+            
+            <button onclick="appendToclv('sin(')">sin</button>
+            <button onclick="appendToclv('ln(')">ln</button>
+            <button onclick="appendToclv('7')">7</button>
+            <button onclick="appendToclv('8')">8</button>
+            <button onclick="appendToclv('9')">9</button>
+            <button onclick="appendToclv('/')">÷</button>
 
-  
-    
-   
-<script>
+            <button onclick="appendToclv('!')">n!</button>
+            <button onclick="appendToclv('cos(')">cos</button>
+            <button onclick="appendToclv('log(')">log</button>
+            <button onclick="appendToclv('4')">4</button>
+            <button onclick="appendToclv('5')">5</button>
+            <button onclick="appendToclv('6')">6</button>
+            <button onclick="appendToclv('*')">×</button>
 
-    
-</script>
-   
+            <button onclick="appendToclv('e')">e</button>
+            <button onclick="appendToclv('tan(')">tan</button>
+            <button onclick="appendToclv('√(')">√</button>
+            <button onclick="appendToclv('3')">3</button>
+            <button onclick="appendToclv('2')">2</button>
+            <button onclick="appendToclv('1')">1</button>
+            
+            <button onclick="appendToclv('-')">-</button>
+
+            <button onclick="appendToclv('EXP')">EXP</button>
+            <button onclick="appendToclv('x²')">x²</button>
+            <button onclick="appendToclv('^')">x^</button>
+            <button onclick="appendToclv('.')">.</button>
+            <button onclick="appendToclv('0')">0</button>
+            <button onclick="appendToclv('+')">+</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script>
+        var text1 = document.getElementById('clv');
+
+        function appendToclv(value) {
+            text1.value += value;
+        }
+
+        function clearclv() {
+            text1.value = '';
+        }
+
+        function calculate() {
+            try {
+                var calcule = text1.value;
+                calcule = calcule.replace(/sin\(/g, 'Math.sin(');
+                calcule = calcule.replace(/cos\(/g, 'Math.cos(');
+                calcule = calcule.replace(/tan\(/g, 'Math.tan(');
+                calcule = calcule.replace(/log\(/g, 'Math.log10(');  
+                calcule = calcule.replace(/ln\(/g, 'Math.log(');
+                calcule = calcule.replace(/\be\b/g, 'Math.E'); 
+                calcule = calcule.replace(/x²/g, '**2');             
+                calcule = calcule.replace(/\^/g, '**');              
+                calcule = calcule.replace(/√\(/g, 'Math.sqrt(');
+                calcule = calcule.replace(/%/g, '/100');
+        
+                calcule = calcule.replace(/(\d+)!/g, function(match, number) {
+                    let fact = 1;
+                    for (let i = 1; i <= parseInt(number); i++) {
+                        fact *= i;
+                    }
+                    return fact;
+                });
+                calcule = calcule.replace(/(\d+)EXP(\d+)/g, function(match, base, exp) {
+                    return base + "*Math.pow(10," + exp + ")";
+                });
+                var result = eval(calcule);
+                text1.value = result;
+            } catch (error) {
+                text1.value = 'Erreur';
+            }
+        }
+        function invert() {
+            var inv = text1.value;
+            if (!isNaN(inv) && inv !== '') {
+                text1.value = 1 / parseFloat(inv);
+            } else {
+                text1.value = 'Erreur';
+            }
+        }
+    </script>
 </body>
 </html>

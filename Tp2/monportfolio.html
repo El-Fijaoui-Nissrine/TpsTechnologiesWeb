@@ -3,86 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonPortfolio</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-   
+    <title>Portfolio - Nissrine El Fijaoui</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="ProfolioStyle.css">
-   
 </head>
 <body>
-   <header >
-  <p>NISSRINE EL FIJAOUI</p>
-<nav>
+    <header>
+    
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
+        </nav>
+    </header>
 
-<a href="#home">Home</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contacts">Contact</a>
+    <section id="home" class="hero">
+        <div class="content">
+            <h1>Hi, I'm Nissrine EL FIJAOUI</h1>
+            <h3>Master's student in Distributed Systems and AI</h3>
+            <h4>Passionate about developing innovative solutions with AI and distributed technologies</h4>
+            <a href="#projects" class="projt">See My Projects</a>
+        </div>
+        <div class="home-image">
+            <img src="monphoto.jpg" alt="Nissrine El Fijaoui">
+        </div>
+    </section>
 
-</nav>
-   </header> 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a master's student specializing in Distributed Systems and Artificial Intelligence.
+            My journey in technology started with a fascination for solving real-world problems using innovative solutions.
+            I am highly motivated to explore new technologies and apply my knowledge in AI and distributed systems to build impactful projects.
+        </p>
+    </section>
 
-<section id="home" class="hero">
-    <div class="content">
-        <h1>Hi,I'am Nissrine </h1>
-        <h3> I am a Master's student in Distributed Systems and Artificial Intelligence ,</h3>
-<h4>I'm passionate about developing innovative solutions with AI and distributed technologies</h4> 
-<a href="#projects" class="projt"> See My Projects</a>
-    </div>
-</section>
-<section id="skills">
-    <h2>Skills</h2>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                
+                <h3>Web Development</h3>
+                <ul>
+                    <li>Laravel (PHP Framework)</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+               
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+            
+                <h3>AI & Machine Learning</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>OpenCV</li>
+                    <li>FaceNet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <div id="skiliste">
-        <ul>
-            <li>Laravel (PHP Framework)</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-        </ul>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C++</li>
-           
-          
-        </ul>
-    </div>
-  
-
-</section>
-<section id="projects">
-    <div class="prst">
+    <section id="projects">
         <h2>Projects</h2>
-        <div class="ps">
-            <div class="project">
+        <div class="project-container">
+            <div class="project-card">
                 <h3>Facial Recognition App</h3>
                 <p>This application uses FaceNet, TensorFlow, and OpenCV for real-time facial recognition. Developed using Java, it allows users to identify and authenticate individuals.</p>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Internship Management System</h3>
                 <p>A web-based application developed using the Laravel framework to manage internships effectively. The system allows administrators to register interns, assign mentors, track internship progress, and manage reports.</p>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Personal Website</h3>
                 <p>A simple yet elegant personal website built with HTML, CSS.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-</section>
-<section id="contacts">
-    <h2>Contact Me</h2>
-    <div class="email2">
-        <i class="fa-solid fa-envelope ema"></i>
-<h3>Email</h3>
-<a href="mailto:elfijaoui.nissrine@gmail.com">elfijaoui.nissrine@gmail.com</a>
-    </div>
+    <section id="contacts">
+        <h2>Contact Me</h2>
+        <div class="email2">
+            <i class="fa-solid fa-envelope ema"></i>
+          
+            <a href="mailto:elfijaoui.nissrine@gmail.com">elfijaoui.nissrine@gmail.com</a>
+        </div>
+    </section>
 
-</section>
-<footer>
-<p> © 2025 My Portfolio</p>
-
-</footer>
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
 </body>
 </html>
