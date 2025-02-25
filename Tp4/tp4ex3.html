@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp4ex3</title>
+    <style>
+        div{
+            padding: 20px;
+            width: 30%;
+            border: 3px rgb(133, 133, 247) solid;
+        }
+#CLC{
+    padding: 5px;
+    background-color: rgb(157, 157, 239);
+    border-radius: 8px rgb(133, 133, 247) ;
+}
+    </style>
+</head>
+<body>
+
+    <div >
+        <h1>Calculateur d'IMC</h1>
+        <label for="val1">Poids(kg) :</label>
+        <input type="text" name="val1" id="val1"><br><br>
+        <label for="val2">taille(m) :</label>
+        <input type="text" name="val2" id="val2"><br><br>
+            <input type="button" value="calculer" onclick="imc()" id="CLC"><br><br>
+            <p id="msg"></p>
+    
+   
+<script>
+    function imc(){
+        var text1=parseFloat(document.getElementById('val1').value);
+        var text2=parseFloat(document.getElementById('val2').value);
+        var p=document.getElementById('msg');
+        const res=(text1 / (text2 * text2)).toFixed(2);
+        if(res<18.5){
+           p.textContent="votre IMc est de"+res+" .Vous etes en état d'insuffisance pondérale";
+        }
+        else if(res>=18.5 && res<25){
+           p.textContent="votre IMc est de "+res+" .Vous etes en état de corpulence normale";
+        }
+        else if(res>=25 && res<30){
+           p.textContent="votre IMc est de  "+res+" .Vous etes en état de surpoids";
+        }
+        else if(res>=30 && res<35){
+           p.textContent="votre IMc est de  "+res+" .Vous etes en état d'obésité modérée";
+        }
+        else if(res>=35 && res<40){
+           p.textContent="votre IMc est de  "+res+" .Vous etes en état d'obésité sévère";
+        }
+        else if(res>=40){
+           p.textContent="votre IMc est de  "+res+" .Vous etes en état d'obésité morbide ou massive";
+        }
+    }
+</script>
+   
+</body>
+</html>

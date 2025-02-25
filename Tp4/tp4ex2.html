@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp4ex2</title>
+    <style>
+        div{
+            padding: 20px;
+            width: 30%;
+            border: 3px rgb(133, 133, 247) solid;
+        }
+    </style>
+</head>
+<body>
+<div >
+    <input type="text" name="val1" id="val1"><br><br>
+        <input type="text" name="val2" id="val2"><br><br>
+        <input type="button" value="+" onclick="som()">
+        <input type="button" value="-" onclick="sous()">
+        <input type="button" value="*" onclick="prd()">
+        <input type="button" value="/" onclick="div()"><br><br>
+        <input type="text" name="res" id="res"><br><br></div>
+<script>
+function som(){
+    var text1=document.getElementById('val1');
+    var text2=document.getElementById('val2');
+    var text3=document.getElementById('res');
+    text3.value=parseFloat(text2.value)+parseFloat(text1.value);
+}
+function sous(){
+    var text1=document.getElementById('val1');
+    var text2=document.getElementById('val2');
+    var text3=document.getElementById('res');
+    text3.value=parseFloat(text2.value)-parseFloat(text1.value);
+}
+function prd(){
+    var text1=document.getElementById('val1');
+    var text2=document.getElementById('val2');
+    var text3=document.getElementById('res');
+    text3.value=parseFloat(text2.value)*parseFloat(text1.value);
+}
+function div(){
+    var text1=document.getElementById('val1');
+    var text2=document.getElementById('val2');
+    var text3=document.getElementById('res');
+    text3.value=parseFloat(text2.value)/parseFloat(text1.value);
+}
+</script>
+   
+</body>
+</html>
