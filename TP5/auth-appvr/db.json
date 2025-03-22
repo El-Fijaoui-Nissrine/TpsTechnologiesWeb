@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "ec6e",
+      "name": "nissrine",
+      "email": "nissr@mail.com",
+      "password": "cccccccc"
+    },
+    {
+      "id": "e826",
+      "name": "zineb",
+      "email": "zine@gamil.com",
+      "password": "nnnnnnnn"
+    },
+    {
+      "id": "0f6b",
+      "name": "amine",
+      "email": "amine@gmail.com",
+      "password": "aaaaaaa"
+    }
+  ]
+}

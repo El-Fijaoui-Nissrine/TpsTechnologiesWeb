@@ -23,6 +23,12 @@
       "fullName": "rim",
       "email": "rim@gmail.com",
       "password": "ssss"
+    },
+    {
+      "id": "0fa6",
+      "fullName": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "aaaa"
     }
   ]
 }
