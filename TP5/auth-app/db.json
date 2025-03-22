@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "ffd6",
+      "fullName": "nissrine",
+      "email": "nassronael@gmail.com",
+      "password": "nas"
+    },
+    {
+      "id": "d534",
+      "fullName": "nissrine el fijaoui",
+      "email": "nis.elg@gmail.com",
+      "password": "ssss"
+    },
+    {
+      "id": "420e",
+      "fullName": "zineb",
+      "email": "elfijaouiz@gmail.com",
+      "password": "qqq"
+    },
+    {
+      "id": "d1d2",
+      "fullName": "rim",
+      "email": "rim@gmail.com",
+      "password": "ssss"
+    }
+  ]
+}
