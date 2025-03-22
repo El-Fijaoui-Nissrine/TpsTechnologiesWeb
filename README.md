@@ -5,12 +5,18 @@ This repository contains multiple tps. Click on each link to view its detailed R
 3. [TP2-Part 2: Portfolio Development ](./Tp2/readme.md)
 4. **TP3- Introduction à JavaScript : Types simples, variables et instructions de base :**  
 Here are the exercises :  
-1. [Exercise 1](./tp3/readme1.md)
-2. [Exercise 2](./tp3/redame2.md)
-3. [Exercise 2_Bis](./tp3/readme2_bis.md)
-4. [Exercise 3](./tp3/readme3.md)
-5. [Exercise 4](./tp3/readme4.md)
-6. [Exercise 4_Bis](./tp3/readme4_bis.md)
-7. [Exercise 5](./tp3/readme5.md)
-8. [Exercise 6](./tp3/readme6.md)
-9. [Exercise 7](./tp3/readme7.md)
+  - [Exercise 1](./tp3/readme1.md)
+  - [Exercise 2](./tp3/redame2.md)
+  - [Exercise 2_Bis](./tp3/readme2_bis.md)
+  - [Exercise 3](./tp3/readme3.md)
+  - [Exercise 4](./tp3/readme4.md)
+  - [Exercise 4_Bis](./tp3/readme4_bis.md)
+  - [Exercise 5](./tp3/readme5.md)
+  - [Exercise 6](./tp3/readme6.md)
+  - [Exercise 7](./tp3/readme7.md)
+5. **TP4- Introduction à JavaScript 2:**  
+Here are the exercises :
+  - [Exercise 1](./Tp4/readmeTp4ex1.md)
+  - [Exercise 2](./Tp4/readmeTp4ex2.md)
+  - [Exercise 3](./Tp4/readmeTp4ex3.md)
+  - [Exercise 4](./Tp4/readmeTp4ex4.md)
